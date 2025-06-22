@@ -10,7 +10,7 @@ body {
 #app {
   max-width: 70%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: auto;
   gap: 20px;
 }
@@ -27,7 +27,7 @@ figure {
   background-color: aliceblue;
   display: block;
   border-radius: 10px;
-  height: 440px;
+  /* height: 400px; */
   width: 100%;
   box-shadow: 4px 4px 4px;
 }
@@ -49,15 +49,29 @@ figcaption {
 @media (max-width: 660px) {
   #app {
     max-width: 100% !important;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   figure {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 }
+
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  #app {
+    max-width: 100% !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  figure {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 
 /* ===== scroll css ===== */
 /* width */
